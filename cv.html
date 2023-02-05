@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi CV en HTML</title>
+    <link rel="stylesheet" type="text/css" href="estilos\estilos.css" />
+    <link rel="icon" type="image/x-icon" href="utilidades\descarga.jpeg">
+    <script src="https://kit.fontawesome.com/655d11fc7a.js" crossorigin="anonymous"></script>
+    <script src="js\cv.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="navbar" class="container">
+            <nav>
+                <ul id="barra_de_navegacion">
+                    <div class="menu">
+                        <i id="yo" class="fa-solid fa-user" onmouseover="bigImg1(this)"
+                            onmouseout="normalImg1(this)"></i>
+                        <li><a href="#datosGenerales" onmouseover="mOver1(this)" onmouseout="mOut1(this)">Sobre MI</a>
+                        </li>
+
+                    </div>
+
+                    <div class="menu">
+                        <div class="dropdown">
+                        <i id="casa" class="fa-solid fa-house" onmouseover="bigImg2(this)"
+                            onmouseout="normalImg2(this)" ></i>
+                        <li><button id="myBtn" class="dropbtn" href="" onmouseover="mOver1(this)" onmouseout="mOut2(this)">Mi Direccion</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="">Punta Alta 333 Bahia Blanca, Bs As, ARG</a>
+                              </div>
+                        </li>
+                      
+
+                          <script>
+                           
+                            document.getElementById("myBtn").onclick = function() {myFunction()};
+                            
+                            function myFunction() {
+                              document.getElementById("myDropdown").classList.toggle("show");
+                            }
+                            </script>
+                    </div>
+                   
+
+                    </div>
+
+                    <div class="menu">
+                        <i id="miFoto" class="fa-solid fa-image" onmouseover="bigImg3(this)"
+                            onmouseout="normalImg3(this)"></i>
+                        <li><a href="utilidades\foto1.jpg" target="_blank" onmouseover="mOver1(this)"
+                                onmouseout="mOut3(this)">Mi Foto</a></li>
+                    </div>
+
+                    <div class="menu">
+                        <i id="Mail" class="fa-sharp fa-solid fa-at" onmouseover="bigImg4(this)"
+                            onmouseout="normalImg4(this)"></i>
+                        <li><a href="#contacto" onmouseover="mOver1(this)" onmouseout="mOut4(this)">Contacto</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+       
+    </header>
+
+    <main>
+        <div id="principal">
+            <div id="presentacion">
+                <div id="foto">
+                    <img class="circular--square" src="utilidades\foto1.jpg" alt="foto de perfil" width="190"
+                        id="foto" />
+                </div>
+                <div id="datos">
+                    <h2> Carlos Roberto Parlante</h2>
+                    <p id="address"> Punta Alta 333, Bahia Blanca, Bs As</p>
+                    <p> carlosparlante@yahoo.com.ar</p>
+                </div>
+            </div>
+            <fieldset id="datosGenerales">
+                <legend>Datos generales</legend>
+                <ul>
+                    <li>Fecha de Nacimiento: 09/02/1973</li>
+                    <li>Nacionalidad: Argentina</li>
+                    <li>Estado civil: Casado</li>
+                </ul>
+            </fieldset>
+
+            <fieldset id="estudios">
+                <legend>Formacion Academica</legend>
+                <ul>
+                    <li>SECUNDARIO COMPLETO (PERITO COMERCIAL ESPECIALIZADO EN COSTOS Y PERITO AERONÁUTICO)</li>
+                    <li>MECÁNICO AERONÁUTICO CON EXPERIENCIA EN MANTENIMIENTO DE SH-3D, SH-3H, PH-3H, UH-3H. MECÁNICO DE
+                        VUELO DE PRUEBA. EXPERIENCIA DE VUELO EN LA ANTÁRTIDA, RESCATE DE NÁUFRAGO, CARGAS EXTERNAS
+                        PESADAS, DESDE TIERRA Y UNIDADES DE SUPERFICIE, MANEJO DE GRANDES GRUPOS, CAPACIDAD DE LIDERAZGO
+                        Y MUY A GUSTO EN TRABAJAR EN EQUIPO.
+                    </li>
+
+                </ul>
+            </fieldset>
+
+            <fieldset id="experiencia_laboral">
+                <legend>Experiencia Laboral</legend>
+                <ul>
+                    <li>2016-2014: 2DA ESCUADRILLA AERONAVAL DE HELICÓPTEROS, ARMADA ARGENTINA.
+                        ENCARGADO DEL CENTRO DE ADIESTRAMIENTO DE LA 2DA ESCUADRILLA DE HELICÓPTEROS. DICTADO DE LOS
+                        CURSOS: RECONOCIMIENTO DE AERONAVE, PRIMARIO PARA MECÁNICOS DE MANTENIMIENTO, SECUNDARIO PARA
+                        MECÁNICOS DE MANTENIMIENTO, AYUDANTE DE MECÁNICO DE VUELO, MECÁNICO DE VUELO Y CAPACITACIÓN PARA
+                        HABILITACIÓN DE INSPECTORES TODOS ESTOS APROBADOS POR EL REGLAMENTO AERONAVEGABILIDAD MILITAR
+                        (RAM).</li>
+
+                    <li>2012: 2DA ESCUADRILLA AERONAVAL DE HELICÓPTEROS, ARMADA ARGENTINA
+                        INSPECTOR DE LA CALIDAD DEL MATERIAL AERONÁUTICO, COMISIÓN DE RECEPCIÓN DE HELICÓPTERO UH-3H,
+                        DURANTE 22 CURSO APLICATIVO PARA MECÁNICOS AERONÁUTICOS, EN BASE AERONAVAL DE PUNTA INDIO.</li>
+
+                    <li>2002-2001: 2DA ESCUADRILLA AERONAVAL DE HELICÓPTEROS, ARMADA ARGENTINA.
+                        INTEGRANTE DE CARGO MANTENIMIENTO DE HELICÓPTEROS SH-3D, PH-3H.
+                        OPERACIONES DE VUELO, COMO AYUDANTE DE MECÁNICO DE VUELO Y TAREAS COMO GÜINCHERO DE HELICÓPTEROS
+                        EN RESCATES EN ALTA MAR, ATERRIZAJES EN CUBIERTAS DE BUQUES, Y AÉREAS CONFINADAS.
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset id="otras_habilidades">
+                <legend>Otras Habilidades</legend>
+                <ul>
+                    <li>Fecha de Nacimiento: 09/02/1973</li>
+                    <li>Nacionalidad: Argentina</li>
+                    <li>Estado civil: Casado</li>
+                </ul>
+            </fieldset>
+
+        </div>
+    </main>
+    <fieldset id="contacto">
+        <legend>Contacto</legend>
+        <Form action="https://formsubmit.co/carlosparlante@yahoo.com.ar " method="POST">
+            <div id="name">
+                <label for="name">Nombre :</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" required />
+            </div>
+
+            <div id="apellido">
+                <label>Apellido :</label>
+                <input id="apellido1" type="text" name="apellido" placeholder="Ingrese su apellido" required />
+            </div>
+
+            <div id="email">
+                <label for="email">E-mail:</label>
+                <input id="correo1" type="email" name="email" placeholder="Ingrese su E-mail"
+                    pattern="[a-zA-Z0-9!#$%&'*_+-]([\.]?[a-zA-Z0-9!#$%&'*_+-])+@[a-zA-Z0-9]([^@&%$\/()=?¿!.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,4}([\.][a-zA-Z]{2})?"
+                    required />
+            </div>
+
+            <div id="comentario">
+                <label for="comentario">Mensaje:</label>
+                <textarea name="comentario" id="mensajes"></textarea>
+                <button type="submit" id="enviar">Enviar</button>
+            </div>
+        </Form>
+    </fieldset>
+
+    
+</body>
+
+</html>
